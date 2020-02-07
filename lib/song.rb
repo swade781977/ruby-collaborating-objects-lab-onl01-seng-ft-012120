@@ -15,10 +15,8 @@ class Song
   def self.new_by_filename(file)
     arr = file.split(" - ")
     a = Song.new(arr[1])
-    binding.pry
     artist = Artist.find_or_create_by_name(arr[0])
     a.artist = artist
-     
     a.genre = "#{arr[2].gsub!(".mp3", "")}"
     a
   end
