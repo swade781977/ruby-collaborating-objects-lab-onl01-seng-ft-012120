@@ -17,7 +17,6 @@ class Song
     a = Song.new(arr[1])
     artist = Artist.find_or_create_by_name(arr[0])
     a.artist = artist
-    a.genre = "#{arr[2].gsub!(".mp3", "")}"
     a
   end
   
