@@ -16,7 +16,7 @@ class Song
     file = file.split(" - ")
     file[2] = file[2].gsub!(".mp3", "")
     a = artist_name=(file[0]) 
-    binding.pry
+    a = Song.new("#{file[1]}")
     
   end
   
