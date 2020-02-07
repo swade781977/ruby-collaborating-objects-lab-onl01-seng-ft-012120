@@ -18,7 +18,7 @@ class Song
     a = artist_name=(file[0]) 
     a = Song.new("#{file[1]}")
     a.artist = a
-    .genre = file[2].gsub!(".mp3", "")
+    genre = file[2].gsub!(".mp3", "")
   end
   
   def artist_name=(name)
