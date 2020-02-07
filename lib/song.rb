@@ -17,6 +17,7 @@ class Song
     a = "#{file[0]}"
     artist_name=(a) 
      a = Song.new("#{file[1]}")
+     a.intern
     genre = "#{file[2].gsub!(".mp3", "")}"
   end
   
