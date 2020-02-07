@@ -16,7 +16,7 @@ class Song
     file = file.split(" - ")
   
     artist_name=("#{file[0]}") 
-    "#{file[0]" = Song.new("#{file[1]}")
+    "#{file[0]}" = Song.new("#{file[1]}")
     a.artist = a
     genre = "#{file[2].gsub!(".mp3", "")}"
   end
