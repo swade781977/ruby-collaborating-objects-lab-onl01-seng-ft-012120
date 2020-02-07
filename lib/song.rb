@@ -16,7 +16,7 @@ class Song
     arr = file.split(" - ")
     a = Song.new(arr[1])
     binding.pry
-    a = arr[0]
+    artist = Artist
     artist_name=(a) 
      
      a.intern
