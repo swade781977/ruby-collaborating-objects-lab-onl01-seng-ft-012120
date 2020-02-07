@@ -20,7 +20,7 @@ class Song
     artist_name=(a) 
      
      a.intern
-    genre = "#{file[2].gsub!(".mp3", "")}"
+    genre = "#{arr[2].gsub!(".mp3", "")}"
   end
   
   def artist_name=(name)
