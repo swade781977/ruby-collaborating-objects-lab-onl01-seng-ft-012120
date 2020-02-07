@@ -16,10 +16,9 @@ class Song
     arr = file.split(" - ")
     a = Song.new(arr[1])
     binding.pry
-    artist = Artist
-    artist_name=(a) 
+    artist = Artist.find_or_create_by_name(arr[0])
+    a.artist = artist
      
-     a.intern
     genre = "#{arr[2].gsub!(".mp3", "")}"
   end
   
