@@ -19,7 +19,8 @@ class Song
     artist = Artist.find_or_create_by_name(arr[0])
     a.artist = artist
      
-    genre = "#{arr[2].gsub!(".mp3", "")}"
+    a.genre = "#{arr[2].gsub!(".mp3", "")}"
+    a
   end
   
   def artist_name=(name)
